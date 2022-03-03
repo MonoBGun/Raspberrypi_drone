@@ -10,7 +10,7 @@ criteria=(cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER,30,0,0.01)
 
 
 cb_3D_points=np.zeros((cb_widht*cb_height,3),np.float32)
-cb_2D_points[:,:2]=np.mgrid[0:cb_widht,0:cb_height].T.reshape(-1,2)*cb_square_size
+cb_3D_points[:,:2]=np.mgrid[0:cb_widht,0:cb_height].T.reshape(-1,2)*cb_square_size
 
 list_cb_3D_points=[]
 list_cb_2D_points=[]

@@ -15,7 +15,7 @@ cb_3D_points[:,:2]=np.mgrid[0:cb_widht,0:cb_height].T.reshape(-1,2)*cb_square_si
 list_cb_3D_points=[]
 list_cb_2D_points=[]
 
-list_images=glob.glob('*.png')
+list_images=glob.glob('*.jpg')
 
 for frame_name in list_images:
     img=cv2.imread(frame_name)
